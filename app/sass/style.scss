@@ -38,11 +38,15 @@ html,body{
 	display:none
 	
 }
-.responsive{
-	
+@media screen and (max-width: 320px){
+	.logo{
+		display:none;
+	}
 }
+
 @media screen and (max-width: 900px){
 .responsive{
+
 			ul{
 			padding:0;
 			width:300px;
@@ -56,44 +60,58 @@ html,body{
 			}
              
              }
-	
-
 }}
 @media screen and (max-width: 900px){
-	.respons img{
-		display:none;}
 	.respons{
 		background-image:url(../img/Responssearch.png);
 		background-size:cover;
 		width:28px;
 		height:29px;
 		display:block;
-		float:left;			
 	}
 	.MiniCart{
 		display:block;
 			height:30px;
 			width:29px;
-			float:right;
+			margin:0 15px;
 	}
 
 }
+@media screen and (max-width: 900px){
+
+	.bottomnav{
+		a{
+			display:none;
+		}
+		
+	}}
+
+@media screen and (max-width: 900px){
+		.topnav{
+				a{
+					display:none;
+				}
+		}
+	}
 
 @media screen and (max-width: 900px){
 		.navbtn{
 		display:none;
 	}
-		.topnav{}
-		a{
-			display:none;
-		}
+
+}
+.dec{
+	display:flex ;
+	margin-left: auto; 
+	 width: 100%;
 }
 	
 header{
 		padding:15px 15px 0 15px;
-	max-width:1140px;
-	height: 100%;
-	margin:0 auto;
+		max-width:1140px;
+	  height: 200px;
+	  margin: 0 auto;
+
 }
 
 
@@ -107,20 +125,21 @@ header{
 	height: 100%;
 	margin:0 auto;
 }
+.flex{
+	display:flex;
+	flex-direction: column;
+}
 
 .logo{
-	float: left;
-	clear:left;
 	width:150px;
 	height:69px;
 }
 
 .topnav {
 	display: inline-block;
-	float:right;
-	clear:right;
 	margin-right: 16px;
 	position:relative;
+	margin-left: auto;
 ;
 
 	
@@ -178,11 +197,7 @@ header{
 	position:relative;
 
 }
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
-}
+
 button:focus{
 	outline:none;
 	&:active{
@@ -191,9 +206,12 @@ button:focus{
 	}
 }
 .bottomnav{
-	float:right;
-	clear:right;
+	margin-left: auto;
 	margin-top: 15px;
+	display: inherit;
+	button{
+		    align-self: center;
+	}
 }
 .navbtn{
 	height:35px;
@@ -227,6 +245,8 @@ button:focus{
 }
 .navbar{
 	width:100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 

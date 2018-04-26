@@ -1,14 +1,12 @@
-.allitems{
+.contents{
 	text-align: center;
-
-		
 		h1{
 			font-size:30px;
 			text-transform:uppercase;
 			color:#202945;
-
+			text-align:center;
 		}
-		a{
+		& a{
 			color:#d60202;
 			font-family: 'ProximaNova-Thin';
 			text-decoration: none;
@@ -24,6 +22,7 @@
 					height: 8px;
 					background-image: url(../img/left-arrow.png);
 					background-repeat: no-repeat;
+					text-align:center;
 				}
 		}
 
@@ -60,6 +59,10 @@
 		
 	}
 }
+.allitems{
+	text-align:center;
+}
+
 
 .content{
 		max-width:1140px;
