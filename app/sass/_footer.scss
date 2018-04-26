@@ -1,0 +1,33 @@
+.footer{
+  display: flex;
+justify-content: space-between;
+margin: 0 auto;
+max-width: 1140px;
+padding: 0 15px;
+margin-top: 100px;
+
+
+  .red{
+    color: red;
+font-size: 14px;
+
+  }
+  .otakoi{
+    color: #3f5b69;
+    font-family: 'SegoeUI-Light';
+    em{
+      text-transform: uppercase;
+      font-family: 'SegoeUI-Bold';
+    }
+
+  }
+
+}
+@media screen and (max-width: 900px){
+  .footer{
+    display:block;
+    p{
+      text-align:center;
+    }
+  }
+}
