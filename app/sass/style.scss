@@ -38,7 +38,7 @@ html,body{
 	display:none
 	
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 400px){
 	.logo{
 		display:none;
 	}
@@ -46,6 +46,7 @@ html,body{
 
 @media screen and (max-width: 900px){
 .responsive{
+	flex: none;
 
 			ul{
 			padding:0;
