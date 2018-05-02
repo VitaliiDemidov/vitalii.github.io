@@ -47,6 +47,7 @@ html,body{
 @media screen and (max-width: 900px){
 .responsive{
 	flex: none;
+	animation: menu 0.5s ease-out;
 
 			ul{
 			padding:0;
@@ -61,7 +62,19 @@ html,body{
 			}
              
              }
+
 }}
+
+@keyframes menu{
+	from{
+	transform:translateY(-150px)
+	}
+	to{
+	
+	}
+}
+
+
 @media screen and (max-width: 900px){
 	.respons{
 		background-image:url(../img/Responssearch.png);
@@ -197,6 +210,7 @@ header{
 	margin-right: 30px;
 	position:relative;
 
+
 }
 
 button:focus{
@@ -212,6 +226,9 @@ button:focus{
 	display: inherit;
 	button{
 		    align-self: center;
+	}
+	ul{
+		padding: 0;
 	}
 }
 .navbtn{
